@@ -4,7 +4,7 @@ var db = require("./db_config");
 db.query("USE employees", function (err, result) {
   if (err) throw err;
 
-  //kita akan menghapus
+  //kita akan menghapus tiga baris pertama dari tabel member yang diurutkan berdasarkan kolom name secara descending (menurun)
   const sql = `DELETE FROM member ORDER BY name DESC LIMIT 3`;
 
   db.query(sql, function (err, result) {
