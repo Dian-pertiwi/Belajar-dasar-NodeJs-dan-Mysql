@@ -9,6 +9,6 @@ db.query("USE employees", function (err, result) {
 
   db.query(sql, function (err, result) {
     if (err) throw err;
-    console.log(result.affectedRows + " record(s) updated");
+    console.log(result.affectedRows + " 5 data berhasil di update");
   });
 });
